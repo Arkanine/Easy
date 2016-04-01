@@ -1,0 +1,49 @@
+md-content.landing-page(layout="column")
+    .title-content.backdrop-container(layout="column")
+        .content-panel(layout="row" layout-padding)
+            .panel-links(flex layout="row")
+                md-button(href="")
+                    | How it works
+                md-button(href="")
+                    | Explore the shop
+            .panel-auth(layout="row")
+                md-button(sign-in)
+                    | Sign In
+                md-button.md-primary.md-raised.sing-up(sign-up)
+                    | Sign Up
+
+        .content-info(flex layout="column" layout-align="center center")
+            i.info-name
+                | GoodsShop
+            b.info-title
+                | Free goods trade
+            .info-description
+                | Get delicious food direct from the best local producers
+
+        .content-benefit(layout="row" layout-padding)
+            .benefit-direct(flex="33" layout="column")
+                b.direct-header
+                    | direct
+                .direct-description
+                    | Savings for you, better deal for producers
+            .benefit-delicious(flex="33" layout="column")
+                b.delicious-header
+                    | delicious
+                .delicious-description
+                    | Fresh, healthy, local
+            .benefit-delivery(flex="33" layout="column")
+                b.delivery-header
+                    | free delivery
+                .delivery-description
+                    | To your door, same day from source
+
+        .content-footer(layout="row" layout-align="center center")
+            md-button.footer-how-works
+                | How it works
+            md-button.footer-shopping
+                | Start shopping
+
+    .how-works-content(layout="column")
+
+    .how-works-headers(layout="row")
+

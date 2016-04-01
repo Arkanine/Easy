@@ -1,0 +1,92 @@
+.landing-page {
+  .title-content {
+    height: 100vh;
+    background: url("/assets/images/title-background1.jpg") no-repeat center center fixed;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    .content-panel {
+      .panel-links {
+        .md-button {
+          color: $color-white;
+          font-size: 16px;
+          font-family: Apercu-Light, sans-serif;
+          text-transform: capitalize;
+        }
+      }
+      .panel-auth {
+        .md-button {
+          color : $color-white;
+          font-size: 16px;
+          font-family: Apercu-Light, sans-serif;
+          text-transform: capitalize;
+        }
+        .sing-up {
+          background-color: $color-salad;
+        }
+        .md-button:hover {
+          background-color: $color-salad-light;
+        }
+      }
+    }
+    .content-info {
+      text-align: center;
+      color: white;
+      .info-name {
+        font-size: 44px;
+      }
+      .info-title {
+        font-size: 30px;
+      }
+      .info-description {
+        font-size: 18px;
+      }
+    }
+    .content-benefit {
+      color: $color-white;
+      text-align: center;
+      .benefit-direct, .benefit-delicious, .benefit-delivery {
+        [class$="header"] {
+          font-size: 24px;
+          text-transform: uppercase;
+        }
+        [class$="description"] {
+          font-size: 18px;
+        }
+      }
+    }
+    .content-footer {
+      height: 60px;
+      color: $color-white;
+      background-color: rgba(0, 0, 0, 0.6);
+
+      .md-button {
+        color : $color-white;
+        width: 180px;
+        font-size: 16px;
+        font-family: Apercu-Light, sans-serif;
+        text-transform: capitalize;
+        background-color: $color-salad;
+      }
+      .footer-how-works {
+        color: $color-salad;
+        background-color: $color-white;
+        //&:hover {
+        //  background-color: $color-salad-light;
+        //}
+      }
+      .footer-shopping {
+        color: $color-white;
+        background-color: $color-salad;
+        //&:hover {
+        //  background-color: $color-salad-light;
+        //}
+      }
+    }
+  }
+
+  .how-works-content {
+    height: 1000px;
+  }
+}

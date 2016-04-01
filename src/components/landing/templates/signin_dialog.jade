@@ -1,0 +1,23 @@
+md-dialog(ng-cloak)
+    form(name='signinForm', ng-submit='signin(signinForm.$valid)')
+        md-content.md-padding(layout='column', layout-padding)
+            h1
+                | Login
+            md-input-container(md-no-float='')
+                input(ng-model='user.email', type='email', name='email', placeholder='Email', ng-required='true')
+                .messages(ng-if='signinForm.email.$invalid && signinForm.email.$dirty', ng-messages='signinForm.email.$error')
+                    div(ng-message='email') Your email address is invalid.
+            md-input-container(md-no-float='')
+                input(ng-model='user.password', type='password', name='password', placeholder='Password', ng-required='true')
+                .messages(ng-if='signinForm.password.$invalid && signinForm.password.$dirty', ng-messages='signinForm.password.$error')
+                    div(ng-message='required') This field is required.
+
+            md-button(ng-click="authenticate('facebook')")
+                | Facebook
+            md-button(ng-click="authenticate('twitter')")
+                | Twitter
+            md-button(ng-click="authenticate('google')")
+                | Google
+        .padding
+            button.button.button-block.md-raised.md-primary.md-button.md-default-theme(type='submit')
+                | Sign In
